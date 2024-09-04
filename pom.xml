@@ -12,7 +12,7 @@
 	<groupId>rtg.learning.microservices</groupId>
 	<artifactId>currency-exchange-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>currency-exchange-service</name>
+	<name>currency-exchange-service-k8s</name>
 	<description>Demo project for Spring Boot Microservices</description>
 	<url />
 	<licenses>
@@ -89,11 +89,12 @@
 			<artifactId>opentelemetry-exporter-zipkin</artifactId>
 		</dependency>
 
-
+		<!-- for k8s
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		-->
 	<!-- to resolve :: No spring.config.import property has been defined error
 		https://stackoverflow.com/questions/67507452/no-spring-config-import-property-has-been-defined -->
 		<dependency>
